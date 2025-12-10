@@ -84,7 +84,8 @@ function PurchaseFormPage() {
           return "Purchase date is required";
         }
         // Check for future date
-        const selectedDate = new Date(value);
+        // Parse date string directly to avoid timezone issues
+        const selectedDate = new Date(value + "T00:00:00");
         const today = new Date();
         today.setHours(0, 0, 0, 0);
         if (selectedDate > today) {

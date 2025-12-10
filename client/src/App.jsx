@@ -3,7 +3,6 @@ import Layout from "./components/Layout";
 import ProductListPage from "./pages/ProductListPage";
 import PurchaseFormPage from "./pages/PurchaseFormPage";
 import PurchaseListPage from "./pages/PurchaseListPage";
-import "./App.css";
 
 function App() {
   return (
